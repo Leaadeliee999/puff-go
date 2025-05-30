@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./Character.css";
+import "./character.css";
 
 const characters = [
   { id: 'nutto', frame: '/assets/nutto.png', image: '/assets/tupai.png' },
