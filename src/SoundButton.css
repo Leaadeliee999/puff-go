@@ -1,0 +1,15 @@
+.sound-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 9999; /* supaya selalu di atas */
+}
+
+.sound-button img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,150 @@
+.landing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white; 
+  background-image: url('/assets/background-polos.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.left-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  margin-top: 0;
+  margin-right: 170px;
+  background: none; 
+  padding: 0;
+  border-radius: 0;
+}
+
+.bouncy-logo {
+  width: 610px !important;
+  height: auto !important;
+  animation: bounce-natural 2.2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  transform-origin: bottom center;
+  object-fit: cover;
+}
+
+.start-button,
+.character-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.start-img,
+.character-img {
+  width: 160px; /* sesuaikan ukuran tombol */
+  height: auto;
+}
+
+.profile-button {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.507); 
+  border: none;
+  border-radius: 999px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px; 
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+  z-index: 999;
+}
+
+.profile-button:hover {
+  background-color: #4863ff80;
+}
+
+.profile-icon {
+  font-size: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 9px;
+}
+
+.leaderboard-button {
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.507); 
+  border: none;
+  border-radius: 999px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px; 
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+  z-index: 999;
+}
+
+.leaderboard-button:hover {
+  background-color: #4863ff80;
+}
+
+.leaderboard-icon {
+  font-size: 20px;
+}
+
+.leaderboard-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 9px;
+}
+
+
+@keyframes bounce-natural {
+  0%, 100% {
+    transform: translateY(0) scaleY(1);
+  }
+  20% {
+    transform: translateY(-25px) scaleY(1.05);
+  }
+  40% {
+    transform: translateY(0) scaleY(0.97);
+  }
+  60% {
+    transform: translateY(-12px) scaleY(1.02);
+  }
+  80% {
+    transform: translateY(0) scaleY(0.99);
+  }
+}

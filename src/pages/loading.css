@@ -1,0 +1,43 @@
+/* loading.css */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #121212; /* background gelap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loading-content {
+  text-align: center;
+  color: #fff;
+  width: 300px;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+}
+
+.loading-bar-background {
+  width: 100%;
+  height: 15px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #000;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 10px 0 0 10px;
+  transition: width 0.1s ease-in-out;
+}

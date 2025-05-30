@@ -1,0 +1,266 @@
+.profile-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white; 
+  background-image: url('/assets/background-polos.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  padding: 60px;
+}
+
+.profile-card {
+  background: rgba(0, 0, 0, 0.4);
+  width: 350px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-align {
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.profile-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  background-color: #00000062;
+  padding: 8px 24px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.profile-label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+.profile-input {
+  background-color: #00000062;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-bottom: 130px;
+  width: 100%;
+  text-align: center;
+}
+
+.save-button {
+  background-color:rgb(0, 255, 0);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 13px;
+}
+
+.logout-button {
+  background-color:rgb(255, 0, 0);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+}
+
+.back-icon {
+  position: fixed;
+  top: 160px;
+  left: 130px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Background popup */
+.swal2-popup {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px !important;
+  color: #333 !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  border-radius: 30px !important;
+  padding: 30px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Judul */
+.swal2-title {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  color: #0a3d62 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Teks isi */
+.swal2-html-container {
+  font-size: 18px !important;
+  color: #34495e !important;
+}
+
+/* Tombol default confirm */
+.swal2-confirm {
+  background-color: #1e90ff !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal2-confirm:hover {
+  background-color: rgba(0, 132, 255, 0.5) !important;
+}
+
+/* Tombol deny */
+.swal2-deny {
+  background-color: #e74c3c !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal2-deny:hover {
+  background-color: rgba(255, 25, 0, 0.5) !important;
+}
+
+/* Tombol cancel */
+.swal2-cancel {
+  background-color: #7f8c8d !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal2-cancel:hover {
+  background-color: rgba(99, 110, 114, 0.5) !important;
+}
+
+/* Tambahan: Style untuk tombol konfirmasi Save (hijau) */
+.swal-save-btn {
+  background-color: #28a745 !important;
+  color: white !important;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 14px !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal-save-btn:hover {
+  background-color: rgba(40, 167, 69, 0.7) !important;
+}
+
+/* Tambahan: Style untuk tombol konfirmasi Log Out (merah) */
+.swal-logout-btn {
+  background-color: #dc3545 !important;
+  color: white !important;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 14px !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal-logout-btn:hover {
+  background-color: rgba(220, 53, 69, 0.7) !important;
+}
+
+/* Tambahan: Style cancel (abu-abu, dipakai ulang) */
+.swal-cancel-btn {
+  background-color: #6c757d !important;
+  color: white !important;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-size: 14px !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+.swal-cancel-btn:hover {
+  background-color: rgba(108, 117, 125, 0.7) !important;
+}
+
+/* Pesan error untuk username kosong */
+.error-message {
+  color: rgb(131, 0, 0);
+  font-size: 10px;
+  text-shadow: #ffffff;
+  margin-bottom: 10px;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* Tampilan swal sukses yang bisa kamu ubah sesuai desain */
+.swal-success-popup {
+  background-color: #e0f7fa !important;
+  border-radius: 100px !important;
+  padding: 20px !important;
+  font-family: "Press Start 2P", cursive !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.swal-success-title {
+  font-size: 20px !important;
+  color: #9276aa !important;
+  text-align: center !important;
+}
+
+.swal-success-button {
+  background-color: #a1679a !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  border-radius: 20px !important;
+  padding: 10px 25px !important;
+  font-weight: bold !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.swal-success-button:hover {
+  background-color: #738fc4 !important;
+}
+
+/* Ganti warna centang swal success */
+.swal2-icon.swal2-success .swal2-success-ring {
+  border: 4px solid #dbdbdb !important; /* lingkaran luar */
+}
+
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+  background-color: #a880a6 !important; /* warna centang */
+}
