@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./loading.css";
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Loading.css';
 
-function LoadingScreen() {
+const Loading = () => {
   const [progress, setProgress] = useState(0);
   const navigate = useNavigate();
 
@@ -12,30 +12,25 @@ function LoadingScreen() {
         if (prev >= 100) {
           clearInterval(interval);
           setTimeout(() => {
-            navigate("/game");
+            navigate('/game'); // Ganti sesuai rute tujuanmu
           }, 500);
           return 100;
         }
-        return prev + 5;
+        return prev + 1;
       });
-    }, 100);
+    }, 30);
 
     return () => clearInterval(interval);
   }, [navigate]);
 
   return (
-    <div className="loading-screen">
-      <div className="loading-content">
-        <p className="loading-text">Loading... {progress}%</p>
-        <div className="loading-bar-background">
-          <div
-            className="loading-bar-fill"
-            style={{ width: `${progress}%` }}
-          ></div>
-        </div>
+    <div className="loading-container">
+      <p className="loading-text">Loading. . . {progress}%</p>
+      <div className="progress-bar-bg">
+        <div className="progress-bar-fill" style={{ width: `${progress}%` }} />
       </div>
     </div>
   );
-}
+};
 
-export default LoadingScreen;
+export default Loading;
